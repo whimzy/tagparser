@@ -176,7 +176,6 @@ dlist_anchor dlist<T>::get_item(int index) const
 template <class T>
 T dlist<T>::erase(dlist_anchor anchor)
 {
-	Log(Log_ds, "remove [%p] p[%p] n[%p]\n", contents(anchor), anchor->_prev, anchor->_next);
 	assert (anchor != 0);
 
 	dlist_anchor next = anchor->_next;
